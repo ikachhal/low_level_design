@@ -19,3 +19,37 @@ OOPs concept used in project:
 4. Single Responsibility Principle: Aircraft and Seat class are segregated so that they can be handled independently. Representing Single Responsibility Principle. 
 5. Association: Flight class has aircraft model as a member variable which is used to represent the relationship between flight and aircraft. 
    It represents the association relationship.
+
+Core Packages and Classes
+
+1. Aircraft Package
+Aircraft: Represents an aircraft with attributes like model, type, and seat configuration.
+Seat: Details individual seats, including seat number, type (e.g., economy, business), and status.
+AircraftType: Enumerates different types of aircraft.
+SeatType: Enumerates seat categories.
+SeatStatus: Enumerates the status of a seat (e.g., available, booked).
+
+2. Booking Package
+Booking: Handles booking details, including passenger information and seat assignments.
+BookingManager: Manages booking operations such as creating and canceling bookings.
+BookingStatus: Enumerates the status of a booking (e.g., confirmed, canceled)
+
+3. Flight Package
+Flight: Contains flight details like flight number, departure and arrival times, and associated aircraft.
+FlightSearch: Facilitates searching for available flights based on criteria.
+
+Relationships and Associations
+
+1. Inheritance:
+Classes like BookingManager may inherit from a generic Manager class (not explicitly shown in the provided files).
+
+2. Associations:
+Flight ↔ Aircraft: Each flight is associated with a specific aircraft.
+Booking ↔ Flight: Bookings are linked to specific flights.
+Booking ↔ Seat: Each booking includes seat assignments.
+
+3. Compositions:
+Aircraft → Seat: An aircraft is composed of multiple seats; seats do not exist independently of an aircraft.
+
+
+
