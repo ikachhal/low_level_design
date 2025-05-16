@@ -1,4 +1,6 @@
 package lld.composite_pattern;
 
-public class Employee {
+interface Employee {
+    void showDetails();
+    double getSalary();
 }
